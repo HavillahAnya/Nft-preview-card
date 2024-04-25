@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Base Styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background-color: hsl(216, 50%, 16%);
+	color: hsl(215, 51%, 70%);
+	font-family: "Outfit", sans-serif;
+	height: 100vh;
+	line-height: 1.5;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Main */
+
+main {
+	background-color: hsl(216, 50%, 16%);
+	max-width: 310px;
+	padding: 1.5rem;
+	border-radius: 1rem;
+    box-shadow: 0 30px 40px hsl(217, 54%, 11%), 
+                         0 20px 20px hsl(217, 54%, 11%);
+}
+
+main img {
+	border-radius: 7px;
+}
+
+main > img:hover {
+	background-color: hsl(178, 100%, 50%);
+}
+
+main h1 {
+	color: hsl(0, 0%, 100%);
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin:  20px 0 10px 0;
+}
+
+main h1:active {
+	cursor: pointer;
+	color: hsl(178, 100%, 50%);
+}
+
+/* Product */
+
+.product {
+	margin: 0.5rem 0;
+	padding: 0.5rem 0 1rem 0;
+	border-bottom: 0.3px solid hsl(215, 32%, 27%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product p {
+	display: inline;
+    margin: 0 5px;
+}
+
+.equilibrium {
+	color: hsl(178, 100%, 50%);
+}
+
+/* Product Creator */
+
+.product-creator {
+	height: 40px;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.product-creator img {
+	width: 40px;
+	border: 1px solid white;
+	border-radius: 100%;
+}
+
+.product-creator span {
+	color: hsl(0, 0%, 100%);
+}
+
+.product-creator span:active {
+	cursor: pointer;
+	color: hsl(178, 100%, 50%);
+}
